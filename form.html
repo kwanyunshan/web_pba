@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" >
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="contact">
+      <!--Header(Home)-->
+      <div data-role="header" class="header">
+        <h1>PTSS SMART STUDENT PORTAL</h1>
+      </div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="form.html" class="ui-btn-active">Form</a></li>
+        </ul>
+      </div>
+
+      <div data-role="content">
+        <form id="contactForm">
+          <label>Full Name</label>
+          <input type="text" id="name" required />
+
+          <label>Student ID</label>
+          <input type="text" id="studentid" required />
+
+          <label>Email</label>
+          <input type="email" id="email" required />
+
+          <label>Phone</label>
+          <input type="tel" id="phone" required />
+
+          <label>Department</label>
+          <input type="text" id="dept" required />
+
+          <label>Category</label>
+          <select id="category" required>
+            <option>Academic</option>
+            <option>Hostel</option>
+            <option>General</option>
+          </select>
+
+          <label>Date</label>
+          <input type="date" id="date" required />
+
+          <label>Message</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit" class="ui-btn ui-btn-b">Submit</button>
+          <button type="reset" class="ui-btn">Reset</button>
+        </form>
+      </div>
+
+      <div data-role="footer">
+        <p>POLITEKNIK TUANKU SYED SIRAJUDDIN,PERLIS</p>
+        <p>&copy; 2026 PTSS Smart Student Portal</p>
+        <p><b>Contact Us</b></p>
+        <p><b>Tel :</b> +60 47642302</p>
+        <p><b>Email :</b> info@ptss.edu.my</p>
+      </div>
+    </div>
+  </body>
+</html>
