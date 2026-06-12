@@ -8,17 +8,17 @@ $(document).on("pagecreate", function () {
     let phone = $("#phone").val();
 
     if (name === "" || email === "" || phone === "") {
-      falert("Please fill in required fields!");
+      alert("Please fill in required fields!");
       return;
     }
 
     if (!email.includes("@")) {
-      falert("Invalid email format!");
+      alert("Invalid email format!");
       return;
     }
 
     if (phone.length < 10) {
-      falert("Invalid phone number!");
+      alert("Invalid phone number!");
       return;
     }
 
